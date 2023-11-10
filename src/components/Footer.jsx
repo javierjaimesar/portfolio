@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer id='footer' className='bg-neutral-200 pt-32 pb-16'>
+        <footer id='footer' className='bg-neutral-200 py-20 px-5 text-center'>
             <div className='flex flex-col justify-center items-center gap-10'>
                 <a href="#main" className='animate-bounce'>
                     <i className='fa fa-2x fa-angle-up'></i>
