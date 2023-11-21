@@ -1,9 +1,11 @@
 // import Atropos from 'atropos/react';
 
+import { link } from "@nextui-org/react";
+
 function CardProyect({ title, description, linkPage, imgPage, linkGitHub }) {
   return (
     <div
-      className="text-slate-200 text-center flex flex-col flex-wrap-reverse justify-center items-center gap-4 p-4 rounded-2xl w-max hover:scale-105 transition-all border-3 shadow-lg shadow-green-500"
+      className="text-slate-200 text-center flex flex-wrap-reverse justify-center items-center sm:gap-8 gap-4 sm:p-8 p-4 rounded-2xl w-max hover:scale-105 transition-all border-3 shadow-lg shadow-green-500"
       data-aos="zoom-in-up"
       data-aos-duration="1500"
     >
@@ -16,17 +18,19 @@ function CardProyect({ title, description, linkPage, imgPage, linkGitHub }) {
         </div>
         <div className="flex gap-5 justify-center items-center transition-all">
           {/* <ButtonLive link={link} textButton={''}></ButtonLive> */}
-          <a
-            href={linkPage}
-            target="_blank"
-            rel="noreferrer"
-            className="transition ease-in-out hover:scale-125 duration-300"
-          >
-            <i
-              className="fa-solid fa-arrow-up-right-from-square text-2xl"
-              style={{ color: "#22c55e" }}
-            ></i>
-          </a>
+          {linkPage && (
+            <a
+              href={linkPage}
+              target="_blank"
+              rel="noreferrer"
+              className="transition ease-in-out hover:scale-125 duration-300"
+            >
+              <i
+                className="fa-solid fa-arrow-up-right-from-square text-2xl"
+                style={{ color: "#22c55e" }}
+              ></i>
+            </a>
+          )}
           <a
             href={linkGitHub}
             target="_blank"
@@ -42,11 +46,11 @@ function CardProyect({ title, description, linkPage, imgPage, linkGitHub }) {
       </div>
       <div
         id="proyect"
-        className="max-w-xs"
+        className="max-w-sm"
         data-aos="flip-left"
         data-aos-duration="1500"
       >
-        <a href={linkPage} target="_blank" rel="noreferrer">
+        <a href={linkPage ? linkPage : linkGitHub} target="_blank" rel="noreferrer">
           {/* <Atropos className="lg:my-atropos"> */}
           <img className="rounded-2xl" src={imgPage} alt="proyecto web" />
           {/* </Atropos> */}
