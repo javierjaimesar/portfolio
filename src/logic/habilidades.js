@@ -9,7 +9,7 @@ import nodejs from "../icon/nodejs.svg";
 import java from "../icon/java.svg";
 import mysql from "../icon/mysql.svg";
 import git from "../icon/git.svg";
-import gitHub from "../icon/gitHub.svg";
+import gitHub from "../icon/github.svg";
 import mongodb from "../icon/mongodb.svg";
 import express from "../icon/express.svg";
 import cplusplus from "../icon/cplusplus.svg";
