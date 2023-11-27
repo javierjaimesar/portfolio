@@ -9,7 +9,6 @@ import Footer from './components/Footer'
 import { NextUIProvider } from "@nextui-org/react";
 
 import './App.css'
-import 'atropos/css'
 
 function App() {
 
