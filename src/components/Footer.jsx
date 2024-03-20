@@ -16,7 +16,7 @@ function Footer() {
                     </a>
                 </div>
                 <p className='text-back'>Esteban Javier Jaimes | Desarrollador Front-End</p>
-                <p>Copyright © 2023. All rights are reserved</p>
+                <p>Copyright © 2024. All rights are reserved</p>
             </div>
         </footer>
     )
